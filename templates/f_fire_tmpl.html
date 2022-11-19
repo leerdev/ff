@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>ForestFrie</title>
+</head>
+
+<body>
+    <h1>Probability of forest fire </h1>
+    <form action='/prediction' method="post">
+		<label for="first_name">Temperature</label>
+        <br>
+        <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text">
+		<br>
+        <label for="last_name">Oxygen</label>
+        <br>
+        <input id="last_name" name="Oxygen" placeholder="Oxygen content in ppm"  type="text">
+		<br>
+        <label for="_name">Humidity</label>
+        <br>
+        <input id="_name" name="Humidity" placeholder="Humidity %" type="text">
+		<br><br>
+		<button type="submit">Prediction</button>
+    </form>
+    <br>
+    {{pred}}
+	<br>
+  </body>
+  
+</html>
+
